@@ -11,7 +11,7 @@ export default function SubscriptionConfirmed() {
                         Subscription Confirmed!
                     </h1>
                     <p className="text-gray-600 text-center mb-6">
-                        Thank you for subscribing. We're excited to have you onboard and look forward to keeping you updated.
+                        Thank you for subscribing. We are excited to have you onboard and look forward to keeping you updated.
                     </p>
                     <Link href="/">
                         <Button className="w-full cursor-pointer">
