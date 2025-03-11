@@ -7,8 +7,7 @@ import { Button } from "@/components/ui/button"
 import QRCode from "react-qr-code"
 
 export default function Home() {
-  const confirmSubscription = (event: MouseEvent) => {
-    event.preventDefault()
+  const confirmSubscription = () => {
     redirect(`/subscription-confirmed`)
   }
 
@@ -22,13 +21,13 @@ export default function Home() {
           />
 
           <QRCode
-            value="/subscription-confirmeda"
+            value="/subscription-confirmed"
             width={150}
             height={150}
             className="mx-auto"
           />
 
-          <Button onClick={confirmSubscription} className="w-full cursor-pointer">
+          <Button type='button' onClick={confirmSubscription} className="w-full cursor-pointer">
             Subscribe
           </Button>
         </form>
