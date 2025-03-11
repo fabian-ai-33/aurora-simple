@@ -20,6 +20,7 @@ const formSchema = z.object({
         try {
           return isValidPhoneNumber(value) || !!parsePhoneNumberFromString(value)?.isValid()
         } catch (error) {
+          console.error(error)
           return false
         }
       },
